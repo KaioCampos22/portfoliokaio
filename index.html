@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="icon" type="image/x-icon" style="color: #13245b" href="./assets/img/code-solid.svg" />
+    <link rel="stylesheet" href="./assets/css/variables.css">
+    <link rel="stylesheet" href="./assets/css/elements.css">
+    <link rel="stylesheet" href="./assets/css/classes.css">
+    <link rel="stylesheet" href="./assets/css/menu.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <input id="close-menu" class="close-menu" type="checkbox" aria-label="Close-menu" role="button">
+    <label class="close-menu-label" for="close-menu" title="close-menu"></label>
+    <aside class="menu white-bg">
+        <div class="main-content menu-content">
+            <h1 onclick="getElementById('close-menu').checked = false;"><a href="#home">Home</a></h1>
+            <nav>
+                <ul onclick="getElementById('close-menu').checked = false;">
+                    <li><a href="#aboutme">Sobre mim</a></li>
+                    <li><a href="#gallery">Projetos</a></li>
+                    <li><a href="#tools">Ferramentas</a></li>
+                    <li><a href="#contact">Contato</a></li>
+
+                </ul>
+            </nav>
+        </div>
+    </aside>
+    <div class="menu-spacing"></div>
+    <section id="home" class="intro main-bg section">
+        <div class="main-content intro-content">
+            <div class="intro-text-content">
+                <h2>Kaio Campos</h2>
+                <p>Desenvolvedor Front End</p>
+                <!-- <a href="https://www.instagram.com/kaio0s/" target="blank_"><img class="insta" width="250"
+                        src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white"
+                        target="blank_"> -->
+            </div>
+            <div class="intro-img">
+                <img src="assets/img/javascript.svg">
+            </div>
+        </div>
+
+    </section>
+    <section id="aboutme" class="white-bg section">
+        <div class="main-content aboutme-content">
+            <h2 class="grid-main-heading">Sobre mim</h2>
+            <p>Olá! Meu nome é Kaio, sou um <strong>Front End Developer</strong></p>
+            <p>Meu foco no desenvolvimento é criar interfaces intuitivas e de ótima perfomance, assim como
+                responsividade
+                e SEO(Search engine optimization).</p>
+        </div>
+    </section>
+    <section id="gallery" class="project white-bg">
+        <div class="main-content project-content">
+            <h2 class="grid-main-heading">Projetos</h2>
+            <a class="grid-main-heading github-link" href="https://github.com/KaioCampos22">Todos os meus projetos
+                aqui!</a>
+            <!-- <p class="grid-description">Alguns dos meus projetos</p> -->
+            <div class="grid">
+                <div class="video">
+                    <span id="phrase">Quiz com requisição API</span>
+                    <video width="460" height="360" src=" ./assets/img/quiz.mp4" controls></video>
+                    <a class="video-info" href="https://github.com/KaioCampos22/Quiz" target="_blank"> Clique aqui para
+                        ir ao github</a>
+                </div>
+            </div>
+    </section>
+    <section id="tools" class="intro main-bg section">
+        <!-- <div class="main-content intro-content"> -->
+
+        <div class="icons-tools main-content">
+            <h2 id="tools-text" class="grid-main-heading">Ferramentas Utilizadas</h2>
+            <div class="row-lines">
+                <img alt="KaioHTML" height="80" width="80"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
+                <p class="infos">HTML é uma linguagem de marcação utilizada na construção de páginas na Web.</p>
+            </div>
+            <div class="row-lines">
+                <img alt="KaioCSS" height="80" width="80"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" />
+                <p class="infos">Cascading Style Sheets é um mecanismo para adicionar estilo a um documento web.</p>
+            </div>
+            <div class="row-lines">
+                <img alt="KaioJs" height="80" width="80"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
+                <p class="infos">JavaScript é uma linguagem de programação interpretada estruturada, de script em
+                    alto
+                    nível com tipagem dinâmica fraca e multiparadigmas</p>
+
+            </div>
+            <div class="row-lines">
+                <img alt="KaioReact" height="80" width="80"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />
+                <p class="infos">O React é uma biblioteca JavaScript de código aberto com foco em criar interfaces
+                    de
+                    usuário em páginas web.</p>
+            </div>
+            <div class="row-lines">
+                <img alt="KaioNode" height="80" width="80"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" />
+                <p class="infos">Node.js é um software de código aberto, multiplataforma, baseado no interpretador
+                    V8 do
+                    Google e que permite a execução de códigos JavaScript fora de um navegador web.</p>
+            </div>
+        </div>
+        </div>
+    </section>
+    <footer id="contact" class="main-footer">
+        <a href="https://www.instagram.com/kaio0s/" target="_blank">
+            <img class="action" src="./assets/img/instagram.png" alt="Meu Instagram">
+        </a>
+        <a href="https://github.com/KaioCampos22" target="_blank">
+            <img class="action" src="assets/img/github.png" alt="Meu GitHub">
+        </a>
+    </footer>
+    <!-- <footer id="footer" class="footer white-bg">
+
+        <a rel="nofollow" href="https://www.linkedin.com/in/kaio-campos-6a24a618b/" target="_blank">kaio&copy;campos</a>
+    </footer> -->
+
+    <a href="#home" class="back">➧</a>
+</body>
+
+</html>
