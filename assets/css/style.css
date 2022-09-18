@@ -163,6 +163,11 @@
         text-align: center;
     }
 
+    .video {
+        width: 360px;
+        height: 360px;
+    }
+
 
     .menu-content,
     .menu-content ul {
