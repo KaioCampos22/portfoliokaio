@@ -214,4 +214,15 @@
     .menu-spacing {
         display: none;
     }
+
+    video {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media (max-width: 520px) {
+    .grid-main-heading {
+        font-size: 5.2rem;
+    }
 }
