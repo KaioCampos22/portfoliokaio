@@ -1,12 +1,19 @@
 .main-bg {
-    background-color: var(--primary-color);
-    color: var(--light-gray-color);
+    background: var(--light-gray-color);
+    color: var(--main-color);
 }
 
+.photo-bg {
+    background: var(--white-color);
+    /* background-image: url(/assets/img/typescript-2.jpg);
+    background-size: cover;
+    background-position: center center; */
+    color: var(--primary-color)
+}
 
 .white-bg {
-    background: var(--primary-color);
-    color: var(--white-color);
+    background: var(--white-color);
+    color: var(--main-color);
 }
 
 .main-content {
@@ -26,7 +33,6 @@
 .main-footer {
     display: flex;
     justify-content: center;
-    background: black;
     padding-top: 28px;
     padding-bottom: 28px;
 

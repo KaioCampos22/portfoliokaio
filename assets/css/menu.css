@@ -5,7 +5,8 @@
     right: 0;
     width: 100%;
     z-index: 1;
-    border-bottom: 0.1rem solid var(--secondary-color);
+    border-bottom: 0.1rem solid var(--black-color);
+    background: var(--black-color);
 }
 
 .menu-content {
@@ -18,8 +19,8 @@
 
 .menu h1 {
     font-size: 2.3rem;
-    color: var(--primary-color);
-    color: var(--light-gray-color)
+    color: var(--light-gray-color);
+    /* color: var(--light-gray-color); */
 }
 
 .menu h1 a {

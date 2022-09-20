@@ -6,10 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kaio Campos</title>
+    <script src="https://kit.fontawesome.com/dfd4c3800b.js" crossorigin="anonymous"></script>
     <link rel="icon" type="image/x-icon" style="color: #13245b" href="./assets/img/code-solid.svg" />
     <link rel="stylesheet" href="./assets/css/variables.css">
     <link rel="stylesheet" href="./assets/css/elements.css">
     <link rel="stylesheet" href="./assets/css/classes.css">
+    <link rel="stylesheet" href="./assets/css/cards.css">
     <link rel="stylesheet" href="./assets/css/menu.css">
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
@@ -19,91 +21,154 @@
     <label class="close-menu-label" for="close-menu" title="close-menu"></label>
     <aside class="menu white-bg">
         <div class="main-content menu-content">
-            <h1 onclick="getElementById('close-menu').checked = false;"><a href="#home">Home</a></h1>
+            <h1 onclick="getElementById('close-menu').checked = false;"><a href="#home">
+                    HOME
+                </a></h1>
             <nav>
                 <ul onclick="getElementById('close-menu').checked = false;">
-                    <li><a href="#aboutme">Sobre mim</a></li>
-                    <li><a href="#gallery">Projetos</a></li>
-                    <li><a href="#tools">Ferramentas</a></li>
-                    <li><a href="#contact">Contato</a></li>
+                    <li><a href="#aboutme">SOBRE MIM</a></li>
+                    <li><a href="#gallery">PROJETOS</a></li>
+                    <li><a href="#tools">CONHECIMENTOS</a></li>
+                    <li><a href="#contact">CONTATO</a></li>
 
                 </ul>
             </nav>
         </div>
     </aside>
     <div class="menu-spacing"></div>
-    <section id="home" class="intro main-bg section">
+    <section id="home" class="intro photo-bg section">
         <div class="main-content intro-content">
             <div class="intro-text-content">
                 <h2>Kaio Campos</h2>
-                <p>Desenvolvedor Front End</p>
+                <p>FRONT END DEVELOPER</p>
             </div>
             <div class="intro-img">
-                <img src="assets/img/javascript.svg">
+                <img src="./assets/img/code-solid.svg" alt="">
             </div>
         </div>
     </section>
-    <section id="aboutme" class="white-bg section">
+    <section id="aboutme" class="main-bg section">
         <div class="main-content aboutme-content">
             <h2 class="grid-main-heading">Sobre mim</h2>
-            <p>- Olá! Meu nome é Kaio, sou um <strong>Front End Developer</strong></p>
-            <p>- Cursando Análise e Desenvolvimento de Sistemas</p>
-            <p>- Meu foco no desenvolvimento é criar interfaces intuitivas e de ótima perfomance, assim como
+            <p><i class="fa-solid fa-user"></i> Olá! Meu nome é Kaio, sou um <strong>Front End Developer</strong></p>
+            <p><i class="fa-solid fa-book"></i> Cursando Análise e Desenvolvimento de Sistemas</p>
+            <p><i class="fa-solid fa-desktop"></i> Meu foco no desenvolvimento é criar interfaces intuitivas e de ótima
+                perfomance, assim como
                 responsividade
-                e SEO(Search engine optimization).</p>
+                e SEO (Search engine optimization).</p>
         </div>
     </section>
     <section id="gallery" class="project white-bg">
         <div class="main-content project-content">
             <h2 class="grid-main-heading">Projetos</h2>
-            <a class="grid-main-heading github-link" href="https://github.com/KaioCampos22">Todos os meus projetos
-                aqui!</a>
-            <div class="grid">
-                <div>
-                    <video class="video" width="360" height="360" src=" ./assets/img/quiz.mp4" controls></video>
-                    <span id="phrase">Quiz com requisição API</span>
+            <div class="cards-video">
+                <div class="card">
+                    <video class="video" src="./assets/img/quiz.mp4" autoplay loop muted></video>
+                    <div class="card-phrase">
+                        <p class="infos">Quiz com Requisição API e Highscores.</p>
+                        <a href="https://github.com/KaioCampos22/Quiz">Link para o repositório do projeto</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <video class="video" src="./assets/img/netflix-clone.mp4" autoplay loop muted></video>
+                    <div class="card-phrase">
+                        <p class="infos">Clone Netflix com jquery e responsivo.</p>
+                        <a href="https://github.com/KaioCampos22/Netflix-clone">Link para o repositório do projeto</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <video class="video" src="./assets/img/codar.mp4" autoplay loop muted></video>
+                    <div class="card-phrase">
+                        <p class="infos">DevChallenge - Landing Page responsiva CODAR.</p>
+                        <a href="https://github.com/KaioCampos22/Codar">Link para o repositório do projeto</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <video class="video" src="./assets/img/hub.mp4" autoplay loop muted></video>
+                    <div class="card-phrase">
+                        <p class="infos">FrontEnd Mentor - Responsivo Challenge Hub</p>
+                        <a href="https://github.com/KaioCampos22/challenge-hub">Link para o repositório do projeto</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <video class="video" src="./assets/img/countries.mp4" autoplay loop muted></video>
+                    <div class="card-phrase">
+                        <p class="infos">Consumindo API de Países e<br> listando alguns dados</p>
+                        <a href="https://github.com/KaioCampos22/rest-api-countries">Link para o repositório do
+                            projeto</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <video class="video" src="./assets/img/guess-number.mp4" autoplay loop muted></video>
+                    <div class="card-phrase">
+                        <p class="infos">Game para adivinhar o número correto.</p>
+                        <a href="https://github.com/KaioCampos22/guess-number">Link para o repositório do projeto</a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
     <section id="tools" class="intro main-bg section">
-        <div class="icons-tools main-content">
-            <h2 id="tools-text" class="grid-main-heading">Ferramentas Utilizadas</h2>
-            <div class="row-lines">
-                <img alt="KaioHTML" height="80" width="80"
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
-                <p class="infos">HTML é uma linguagem de marcação utilizada na construção de páginas na Web.</p>
+        <div class="main-content project-content">
+            <h2 id="tools-text" class="grid-main-heading">Conhecimentos</h2>
+            <div class="cards">
+                <div class="card">
+                    <img class="card-img" alt="KaioHTML"
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
+                    <div class="card-phrase">
+                        <p class="infos">HTML
+                            é uma linguagem de marcação utilizada na construção de páginas na Web.
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img"
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg">
+                    <div class="card-phrase">
+                        <p class="infos">CSS é um mecanismo para adicionar estilo a um documento
+                            web.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img"
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                        alt="">
+                    <div class="card-phrase">
+                        <p class="infos">JavaScript é uma linguagem de programação interpretada estruturada.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img"
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="">
+                    <div class="card-phrase">
+                        <p class="infos">O React é uma biblioteca JavaScript de código aberto com foco em criar
+                            interfaces
+                            de
+                            usuário em páginas web.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img"
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="">
+                    <div class="card-phrase">
+                        <p class="infos">Node.js é um software de código aberto, multiplataforma, baseado no
+                            interpretador
+                            V8 do
+                            Google.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img"
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-plain.svg">
+                    <div class="card-phrase">
+                        <p class="infos">Bootstrap é um framework web com código-fonte aberto para desenvolvimento de
+                            componentes de interface e front-end para sites e aplicações web </p>
+                    </div>
+                </div>
             </div>
-            <div class="row-lines">
-                <img alt="KaioCSS" height="80" width="80"
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" />
-                <p class="infos">Cascading Style Sheets é um mecanismo para adicionar estilo a um documento web.</p>
-            </div>
-            <div class="row-lines">
-                <img alt="KaioJs" height="80" width="80"
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
-                <p class="infos">JavaScript é uma linguagem de programação interpretada estruturada, de script em
-                    alto
-                    nível com tipagem dinâmica fraca e multiparadigmas</p>
-            </div>
-            <div class="row-lines">
-                <img alt="KaioReact" height="80" width="80"
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />
-                <p class="infos">O React é uma biblioteca JavaScript de código aberto com foco em criar interfaces
-                    de
-                    usuário em páginas web.</p>
-            </div>
-            <div class="row-lines">
-                <img alt="KaioNode" height="80" width="80"
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" />
-                <p class="infos">Node.js é um software de código aberto, multiplataforma, baseado no interpretador
-                    V8 do
-                    Google e que permite a execução de códigos JavaScript fora de um navegador web.</p>
-            </div>
-        </div>
         </div>
     </section>
-    <footer id="contact" class="main-footer">
+    <footer id="contact" class="main-footer white-bg">
         <a href="https://www.instagram.com/kaio0s/" target="_blank">
             <img class="action" src="./assets/img/instagram.png" alt="Meu Instagram">
         </a>
@@ -112,6 +177,8 @@
         </a>
     </footer>
     <a href="#home" class="back">➧</a>
+
+
 </body>
 
 </html>
